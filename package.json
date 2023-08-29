@@ -18,5 +18,18 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.2.2"
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
+    }
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
